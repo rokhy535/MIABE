@@ -61,14 +61,9 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, navigateTo, isLoggedIn, us
 
         {/* Barre de recherche */}
         <form className="search-bar" onSubmit={(e) => { e.preventDefault(); nav('artists'); }}>
-          <select className="search-cat">
-            <option>Artistes</option>
-            <option>Œuvres</option>
-            <option>Musique</option>
-            <option>Photo</option>
-          </select>
-          <input className="search-input" type="text" placeholder="Rechercher un artiste certifié..." />
-          <button type="submit" className="search-btn">Rechercher</button>
+           <p></p>
+           <p></p>
+            <p></p>
         </form>
 
         {/* Toggle thème */}
@@ -285,9 +280,9 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, navigateTo, isLoggedIn, us
             </div>
 
             <div className="drawer-section">
-              <button className="drawer-item" onClick={() => nav('home')}>🏠 Accueil</button>
-              <button className="drawer-item" onClick={() => nav('verify')}>✅ Vérifier un artiste</button>
-              <button className="drawer-item" onClick={() => nav('deposit')}>📤 Déposer une œuvre</button>
+              <button className="drawer-item" onClick={() => nav('home')}> Accueil</button>
+              <button className="drawer-item" onClick={() => nav('verify')}> Vérifier un artiste</button>
+              <button className="drawer-item" onClick={() => nav('deposit')}> Déposer une œuvre</button>
               <button className="drawer-item" onClick={() => nav('report')}>⚠️ Signaler un usurpateur</button>
             </div>
 
