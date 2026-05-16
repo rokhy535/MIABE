@@ -1,3 +1,4 @@
+// Home.tsx mis à jour
 import React from 'react';
 import ParticlesBackground from '../components/ParticlesBackground';
 import ArtistCard from '../components/ArtistCard';
@@ -142,6 +143,104 @@ const Home: React.FC<HomeProps> = ({ navigateTo, showToast }) => {
           <strong>Alerte usurpation détectée :</strong> Des comptes Facebook imitant des artistes certifiés ont été signalés cette semaine. Vérifiez toujours le badge blockchain avant d'acheter un billet ou d'envoyer un soutien.
         </span>
         <button className="promo-cta" onClick={() => navigateTo('verify')}>Vérifier maintenant</button>
+      </div>
+
+      {/* Section: Proposition de valeur - Les 3 piliers */}
+      <div className="section pillars-section">
+        <div className="section-header text-center">
+          <div className="section-badge">Notre proposition de valeur</div>
+          <div className="section-title">Protéger, <span>Prouver</span>, <span className="t-red">Connecter</span></div>
+          <div className="section-subtitle">Trois piliers pour révolutionner la protection des artistes</div>
+        </div>
+        <div className="pillars-grid">
+          <div className="pillar-card">
+            <div className="pillar-icon"></div>
+            <div className="pillar-title">Protéger</div>
+            <div className="pillar-desc">Une identité blockchain infalsifiable pour chaque artiste. Votre profil cryptographique est unique, immuable et contrôlé uniquement par vous.</div>
+            <div className="pillar-feature">✓ Signature cryptographique unique</div>
+            <div className="pillar-feature">✓ Contrôle total de vos données</div>
+            <div className="pillar-feature">✓ Protection anti-usurpation</div>
+          </div>
+          <div className="pillar-card">
+            <div className="pillar-icon"></div>
+            <div className="pillar-title">Prouver</div>
+            <div className="pillar-desc">Une preuve légale d'antériorité horodatée pour chaque œuvre. La blockchain atteste de la date exacte de création.</div>
+            <div className="pillar-feature">✓ Horodatage certifié</div>
+            <div className="pillar-feature">✓ Preuve reconnue juridiquement</div>
+            <div className="pillar-feature">✓ Protection contre le vol de droits</div>
+          </div>
+          <div className="pillar-card">
+            <div className="pillar-icon"></div>
+            <div className="pillar-title">Connecter</div>
+            <div className="pillar-desc">Un lien direct, authentique et financier entre l'artiste et ses fans. Plus d'intermédiaires, plus de confiance.</div>
+            <div className="pillar-feature">✓ Soutien direct sans commission</div>
+            <div className="pillar-feature">✓ Vérification instantanée par QR</div>
+            <div className="pillar-feature">✓ Relation authentique artiste-fan</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Section: Pourquoi maintenant */}
+      <div className="section why-now-section">
+        <div className="why-now-container">
+          <div className="why-now-content">
+            <div className="section-badge">Le moment est venu</div>
+            <div className="section-title">Pourquoi <span>maintenant</span> ?</div>
+            <div className="why-now-text">
+              <p>Le marché de la musique africaine pourrait atteindre environ <strong>1 milliard de dollars</strong> d'ici 2030 selon les projections de l'industrie — pourtant les artistes du continent, dont au Sénégal, n'en captent qu'une infime part, notamment <strong>faute de protection d'identité et de droits numériques</strong>.</p>
+              <p className="highlight">ArtistID vise à inverser cette tendance.</p>
+            </div>
+            <div className="why-now-stats">
+              <div className="stat-compact">
+                <span className="value">+200%</span>
+                <span className="label">Croissance du streaming musical africain</span>
+              </div>
+              <div className="stat-compact">
+                <span className="value">&lt;15%</span>
+                <span className="label">Des revenus numériques captés par les artistes locaux</span>
+              </div>
+            </div>
+          </div>
+          <div className="why-now-visual">
+            <div className="growth-chart">
+              <div className="chart-bar" style={{ height: '30%' }}><span>Aujourd'hui</span></div>
+              <div className="chart-bar" style={{ height: '70%' }}><span>2030</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+
+      {/* Section: La solution ArtistID */}
+      <div className="section solution-section">
+        <div className="section-header text-center">
+          <div className="section-badge">Notre réponse</div>
+          <div className="section-title">La solution <span>ArtistID</span></div>
+          <div className="section-subtitle">Quatre fonctions clés · Vision : le premier registre d'identité artistique certifié sur blockchain au Sénégal</div>
+        </div>
+        <div className="solution-grid">
+          <div className="solution-card">
+            <div className="solution-icon"></div>
+            <div className="solution-title">Identité certifiée</div>
+            <div className="solution-desc">Profil public horodaté, signé cryptographiquement sur Polygon — lié à une clé privée que seul l'artiste contrôle.</div>
+          </div>
+          <div className="solution-card">
+            <div className="solution-icon"></div>
+            <div className="solution-title">Preuve d'antériorité</div>
+            <div className="solution-desc">Empreinte SHA-256 du fichier, enregistrée on-chain avec date et heure — base de contestation en cas de revendication tierce.</div>
+          </div>
+          <div className="solution-card">
+            <div className="solution-icon"></div>
+            <div className="solution-title">Vérification par QR</div>
+            <div className="solution-desc">QR unique lié à l'adresse blockchain : en quelques secondes, le fan sait si le profil ou le vendeur est certifié.</div>
+          </div>
+          <div className="solution-card">
+            <div className="solution-icon"></div>
+            <div className="solution-title">Soutien direct</div>
+            <div className="solution-desc">Smart contracts : dons vers le wallet de l'artiste, sans intermédiaire qui bloque ou prélève abusivement.</div>
+          </div>
+        </div>
       </div>
 
       {/* Artistes certifiés */}
